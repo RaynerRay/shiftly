@@ -66,9 +66,6 @@ export default function PracticeInfo({
     formState: { errors },
   } = useForm<PracticeFormProps>({
     defaultValues: {
-      primarySpecialization:
-      doctorProfile.primarySpecialization ||
-      savedDBData.primarySpecialization,
       page: doctorProfile.page || savedDBData.page,
       hourlyWage: doctorProfile.hourlyWage || savedDBData.hourlyWage,
     },

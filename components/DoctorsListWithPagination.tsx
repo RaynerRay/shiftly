@@ -1,27 +1,12 @@
-"use client"; // Mark this as a client-side component
+"use client";
 
 import { useState } from "react";
 import DoctorCard from "@/components/DoctorCard";
-
-// Type definition for the doctor object
-interface Doctor {
-  id: string;
-  userId: string;
-  firstName: string;
-  lastName: string;
-  email?: string;
-  phone?: string;
-  availability?: any;
-  [key: string]: any; // Add this to accommodate additional fields from doctorProfile
-}
-
-interface DoctorsListWithPaginationProps {
-  doctors: Doctor[];
-}
+import  { Doctor as ImportedDoctor } from "@/types/types"; 
 
 const ITEMS_PER_PAGE = 2;
 
-const DoctorsListWithPagination: React.FC<DoctorsListWithPaginationProps> = ({
+const DoctorsListWithPagination: React.FC<{ doctors: ImportedDoctor[] }> = ({
   doctors,
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -50,7 +35,7 @@ const DoctorsListWithPagination: React.FC<DoctorsListWithPaginationProps> = ({
   return (
     <>
       <div className="grid grid-cols-3 gap-6">
-        {paginatedDoctors.map((doctor: Doctor) => (
+        {paginatedDoctors.map((doctor) => (
           <DoctorCard key={doctor.id} doctor={doctor} />
         ))}
       </div>

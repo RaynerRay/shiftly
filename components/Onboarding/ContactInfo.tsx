@@ -2,7 +2,6 @@
 import { BioDataFormProps, ContactFormProps } from "@/types/types";
 import { useForm } from "react-hook-form";
 import TextInput from "../FormInputs/TextInput";
-import SelectWithSearch from "../FormInputs/SelectWithSearch";
 import SubmitButton from "../FormInputs/SubmitButton";
 import { useState } from "react";
 import toast from "react-hot-toast";
@@ -38,7 +37,7 @@ export default function ContactInfo({
     defaultValues: {
       email: doctorProfile.email || savedDBData.email,
       phone: doctorProfile.phone || savedDBData.phone,
-      address: doctorProfile.address || savedDBData.address,
+      address: doctorProfile.city || savedDBData.city,
       city: doctorProfile.city || savedDBData.city,
       // address: doctorProfile.address || savedDBData.address,
       page: doctorProfile.page || savedDBData.page,

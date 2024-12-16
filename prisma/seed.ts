@@ -46,7 +46,7 @@ async function createDoctor(
       state: "NY",
       // medicalSchool: "Medical University",
       // graduationYear: `${2000 + Math.floor(Math.random() * 20)}`,
-      primarySpecialization: specialization,
+      // primarySpecialization: specialization,
       hourlyWage: 100 + Math.floor(Math.random() * 100),
     },
   });

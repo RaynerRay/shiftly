@@ -32,10 +32,28 @@ export default async function Page({
   searchParams: SearchParams;
 }) {
   const { city, profession } = searchParams;
+  
 
   // Fetch doctor data based on city and profession
   const data = await getDoctorsBySearch(city, profession);
-  const doctors: Doctor[] = data?.doctors || [];
+  const doctors: import("@/types/types").Doctor[] = data?.doctors.map(doc => ({
+    id: doc.id,
+    name: `${doc.firstName} ${doc.lastName}`,
+    email: doc.email || '',
+    phone: doc.phone || '',
+    slug: doc.slug,
+    doctorProfile: {
+      firstName: doc.firstName,
+      lastName: doc.lastName,
+      // Add other relevant fields from doc
+      gender: null,
+      profession: null,
+      bio: null,
+      profilePicture: null,
+      hourlyWage: 0,
+      availability: null
+    }
+  })) || [];
   const formattedProfession = profession
     ? separateAndCapitalise(profession)
     : "";
