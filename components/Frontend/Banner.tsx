@@ -40,7 +40,7 @@ const Banner: FC<BannerProps> = ({
               alt="Background"
             />
           )} */}
-          <div className="">
+          <div className=" px-4">
             <div className="py-6 max-w-7xl mx-auto">
            
                 <div className="">

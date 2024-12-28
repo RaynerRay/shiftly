@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/Providers";
-import { ThemeProvider } from "@/components/theme-provider";
+// import { ThemeProvider } from "@/components/theme-provider";
 import { siteConfig } from "@/config/site";
 const inter = Inter({ subsets: ["latin"] });
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
@@ -75,14 +75,14 @@ export default function RootLayout({
         <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
         <Providers>
           <OnboardingContextProvider>
-            <ThemeProvider
+            {/* <ThemeProvider
               attribute="class"
               defaultTheme="system"
               enableSystem
               disableTransitionOnChange
-            >
+            > */}
               {children}
-            </ThemeProvider>
+            {/* </ThemeProvider> */}
           </OnboardingContextProvider>
         </Providers>
       </body>

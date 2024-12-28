@@ -11,8 +11,8 @@ export default function LogoClouds() {
   ];
 
   return (
-    <section className="py-2 xl:pt-6 border-t  border-gray-300">
-      <div className="container px-4 mx-auto max-w-7xl bg-white ">
+    <section className="py-2 xl:pt-6 border-t  border-gray-300 mt-20 md:mt-2">
+      <div className="py-2 px-4 mx-auto max-w-7xl bg-white ">
       <div className="mb-8 text-center">
   <span className="inline-block py-px px-2 mb-4 text-xs leading-5 text-sky-500 bg-sky-100 font-medium uppercase rounded-full">
     Trusted Healthcare Partners

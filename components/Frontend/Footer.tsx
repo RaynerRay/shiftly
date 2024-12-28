@@ -38,7 +38,7 @@ const Footer = () => {
               <a
                 key={index}
                 href={href}
-                className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-sky-500 hover:border-sky-500 transition-colors duration-300"
+                className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:bg-blue-500 hover:border-blue-500 transition-colors duration-300"
               >
                 <Icon className="w-5 h-5" />
               </a>
@@ -50,12 +50,12 @@ const Footer = () => {
         <div className="space-y-6">
           <h3 className="text-2xl text-white font-semibold">Quick Links</h3>
           <div className="grid grid-cols-2 gap-6">
-            <Link href="/" className="text-sky-500 text-sm font-medium hover:text-sky-500 transition-colors">HOME</Link>
-            <Link href="/about" className="text-gray-50 text-sm font-medium hover:text-sky-500 transition-colors">ABOUT</Link>
-            <Link href="/search" className="text-gray-50 text-sm font-medium hover:text-sky-500 transition-colors">ALL LISTINGS</Link>
-            <Link href="/companies" className="text-gray-50 text-sm font-medium hover:text-sky-500 transition-colors">COMPANIES</Link>
-            <Link href="/favourites" className="text-gray-50 text-sm font-medium hover:text-sky-500 transition-colors">FAVOURITES</Link>
-            <Link href="/contact" className="text-gray-50 text-sm font-medium hover:text-sky-500 transition-colors">CONTACT</Link>
+            <Link href="/" className="text-blue-500 text-sm font-medium hover:text-blue-500 transition-colors">HOME</Link>
+            <Link href="/about" className="text-gray-50 text-sm font-medium hover:text-blue-500 transition-colors">ABOUT</Link>
+            <Link href="/search" className="text-gray-50 text-sm font-medium hover:text-blue-500 transition-colors">ALL LISTINGS</Link>
+            <Link href="/companies" className="text-gray-50 text-sm font-medium hover:text-blue-500 transition-colors">COMPANIES</Link>
+            <Link href="/favourites" className="text-gray-50 text-sm font-medium hover:text-blue-500 transition-colors">FAVOURITES</Link>
+            <Link href="/contact" className="text-gray-50 text-sm font-medium hover:text-blue-500 transition-colors">CONTACT</Link>
            
           </div>
         </div>
@@ -84,9 +84,9 @@ const Footer = () => {
             {/* <input
               type="email"
               placeholder="Your email"
-              className="flex-1 bg-white/10 px-4 py-2 rounded-l outline-none focus:ring-2 focus:ring-sky-500"
+              className="flex-1 bg-white/10 px-4 py-2 rounded-l outline-none focus:ring-2 focus:ring-blue-500"
             /> */}
-            <button className="bg-sky-500 text-white px-6 py-2 rounded-r hover:bg-sky-500 transition-colors duration-300">
+            <button className="bg-blue-500 text-white px-6 py-2 rounded-r hover:bg-blue-500 transition-colors duration-300">
               <Link 
                   target="_blank"
                   href="https://wa.me/0772340505?text=Hi,%20I%20want%20to%20list%20%20a%20property"
@@ -102,13 +102,13 @@ const Footer = () => {
       <div className="mt-16 pt-8 border-t border-gray-700">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <p>
-            © <a href="#" className="text-white hover:text-sky-500">Shiftly</a>, All Right Reserved. 
-             {" "}Designed by <Link href="https://www.linkedin.com/in/godfrey-rayner-96b81965/" target="_blank" className="text-sky-500 hover:text-sky-500"> {" "} {" "} Godfrey Rayner</Link>
+            © <a href="#" className="text-white hover:text-blue-500">Shiftly</a>, All Right Reserved. 
+             {" "}Designed by <Link href="https://www.linkedin.com/in/godfrey-rayner-96b81965/" target="_blank" className="text-blue-500 hover:text-blue-500"> {" "} {" "} Godfrey Rayner</Link>
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-          <Link href="/terms-and-conditions" className="text-gray-50 text-sm font-medium hover:text-sky-500 transition-colors">Terms & Conditions</Link>
-            <Link href="/cookies" className="text-gray-50 text-sm font-medium hover:text-sky-500 transition-colors">Cookies</Link>
-            <Link href="/privacy-policy" className="text-gray-50 text-sm font-medium hover:text-sky-500 transition-colors">Privacy Policy</Link>
+          <Link href="/terms-and-conditions" className="text-gray-50 text-sm font-medium hover:text-blue-500 transition-colors">Terms & Conditions</Link>
+            <Link href="/cookies" className="text-gray-50 text-sm font-medium hover:text-blue-500 transition-colors">Cookies</Link>
+            <Link href="/privacy-policy" className="text-gray-50 text-sm font-medium hover:text-blue-500 transition-colors">Privacy Policy</Link>
            
           </div>
         </div>
@@ -117,7 +117,7 @@ const Footer = () => {
       {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
-        className="absolute right-6 bottom-6 bg-sky-500 p-3 rounded-full hover:bg-sky-500 transition-colors duration-300"
+        className="absolute right-6 bottom-6 bg-blue-500 p-3 rounded-full hover:bg-blue-500 transition-colors duration-300"
       >
         <ArrowUp className="w-6 h-6 text-white" />
       </button>

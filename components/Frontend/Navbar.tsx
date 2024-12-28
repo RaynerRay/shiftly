@@ -38,12 +38,12 @@ const Navbar = ({ session }: { session: Session | null }) => {
       icon: Home 
     },
     { 
-      href: "/about", 
+      href: "/howitworks", 
       label: "How It Works", 
       icon: InfoIcon 
     },
     { 
-      href: "/join", 
+      href: "/join/professionals", 
       label: "Join", 
       icon: UserPlus 
     },
@@ -59,17 +59,17 @@ const Navbar = ({ session }: { session: Session | null }) => {
     }
   ];
   return (
-    <div className=" bg-white">
-      <div className="relative  z-20 px-4  font-sans  max-w-7xl mx-auto shadow-md ">
+    <div className=" bg-gray-50">
+      <div className="relative  z-20 px-4  font-sans  max-w-7xl mx-auto  ">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center bg-white rounded-sm">
-            <Image src={"/logo.png"} height={80} width={110} alt='logo' className='object-fit rounded-lg h-16'/>
+          <div className="flex items-center">
+            <Image src={"/logo.png"} height={80} width={110} alt='logo' className='object-fit rounded-lg h-16 py-2'/>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:block">
-          <nav className="bg-white  ">
+          <nav className="  ">
       <ul className="flex items-center justify-center py-2 px-4 space-x-2">
         {navItems.map((item) => (
           <li key={item.href}>
@@ -96,7 +96,7 @@ const Navbar = ({ session }: { session: Session | null }) => {
                 focus:ring-sky-300
               "
             >
-              <item.icon 
+              {/* <item.icon 
                 className="
                   text-slate-600 
                   group-hover:text-sky-500 
@@ -104,7 +104,7 @@ const Navbar = ({ session }: { session: Session | null }) => {
                   duration-300
                 " 
                 size={20} 
-              />
+              /> */}
               <span>{item.label}</span>
             </Link>
           </li>
@@ -176,7 +176,7 @@ const Navbar = ({ session }: { session: Session | null }) => {
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
-              <Button className="bg-sky-500 hover:bg-sky-800">
+              <Button className="bg-gray-500 text-gray-50 hover:bg-gray-800">
                 <Link href="/login" className='flex text-md'>
                   <PersonIcon className="mr-2 h-4 w-4" /> Login
                 </Link>

@@ -9,7 +9,7 @@ export type SingleImageProps = {
 const Brands = () => {
   return (
     <>
-      <section className="bg-slate-100 text-slate-800 py-10  lg:py-[60px]">
+      <section className="bg-slate-100 text-slate-800 py-10  lg:py-[60px] mt-12">
         <h2 className="text-center pb-6 scroll-m-20 text-2xl font-semibold tracking-tight">
           Trusted By
         </h2>
