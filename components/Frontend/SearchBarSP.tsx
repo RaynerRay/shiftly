@@ -64,10 +64,10 @@ export default function SearchBar() {
 
   return (
     <div className="max-w-7xl mx-auto">
-    <div className="flex flex-col md:flex-row items-center justify-between  z-10 relative bg-sky-500 p-8 rounded-lg mx-1">
+    <div className="flex flex-col md:flex-row items-center justify-between  z-10 relative bg-gray-500/40 p-8 rounded-lg mx-1">
       <div ref={dropdownRef} className="relative w-full md:w-5/12 mx-4 text-gray-900">
         <div
-          className="flex items-center bg-white border border-slate-300 gap-4 rounded py-2 px-3 cursor-pointer text-gray-900"
+          className="flex items-center bg-gray-100 border border-slate-300 gap-4 rounded py-2 px-3 cursor-pointer text-gray-900"
           onClick={() => setIsOpen(!isOpen)}
         >
           <input
@@ -78,13 +78,13 @@ export default function SearchBar() {
               setSearchTerm(e.target.value);
               setIsOpen(true);
             }}
-            className="w-full outline-none border border-slate-100 text-gray-900 rounded-sm "
+            className="w-full outline-none border  bg-gray-100 border-slate-100 text-gray-900 rounded-sm "
           />
           <ChevronDown className="ml-2 h-5 w-5 text-gray-500" />
         </div>
 
         {isOpen && (
-          <ul className="absolute z-10 w-full bg-white border border-slate-300 rounded mt-1 max-h-60 overflow-y-auto">
+          <ul className="absolute z-10 w-full bg-gray-100 border border-slate-300 rounded mt-1 max-h-60 overflow-y-auto">
             {filteredOptions.length > 0 ? (
               filteredOptions.map((option) => (
                 <li
@@ -116,7 +116,7 @@ export default function SearchBar() {
   </select>
 
       <button
-        className="bg-white text-sky-800 w-full md:w-2/12 rounded flex items-center px-2 justify-center py-4 hover:bg-sky-600 hover:text-white transition"
+        className="bg-gray-100 text-gray-800 w-full md:w-2/12 rounded flex items-center px-2 justify-center py-4 hover:bg-blue-500 hover:text-white transition"
         onClick={handleSearch} // Call handleSearch on click
       >
         <Search className="mr-2" />

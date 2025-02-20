@@ -8,7 +8,7 @@ import 'react-social-icons/tiktok'
 const page = () => {
   return (
     <div>
-      <div id="page-banner-area" className="page-banner bg-blue-500 text-white py-12">
+      <div id="page-banner-area" className="page-banner bg-gray-500 text-white py-12">
         <div className="page-banner-title text-center">
           <h2 className="text-3xl font-bold">Contact Us</h2>
           <Link href={"/"} className="flex items-center justify-center my-4">

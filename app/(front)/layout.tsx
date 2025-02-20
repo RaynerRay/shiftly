@@ -17,7 +17,7 @@ export default async function Layout({ children }: { children: ReactNode }) {
       {/* <SiteHeader session={session} /> */}
       {/* <NavTop/> */}
       {/* <Navbar session={session} /> */}
-      <Navbar1 />
+      <Navbar1 session={session} />
       {children}
       <Footer />
     </div>

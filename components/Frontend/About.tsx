@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="flex flex-col space-y-12 mt-8 mb-10">
+    <section className="flex flex-col space-y-12 mt-8 mb-10 ">
       {/* Main Intro Section */}
       <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
         {/* Image with blue corner design */}
@@ -53,10 +53,10 @@ export default function About() {
       </div>
 
       {/* Why Choose Shiftly Section */}
-      <div className="bg-gray-50 p-8 rounded-lg shadow">
+      <div className="bg-gray-50 p-8 rounded-lg shadow ">
         <h3 className="text-2xl font-semibold text-gray-800 mb-4">Why Choose Shiftly?</h3>
         <p className="text-gray-600 mb-4">
-          Shiftly simplifies staffing challenges with cutting-edge technology. Here’s why Shiftly is the go-to platform for healthcare staffing in the UK:
+          Shiftly simplifies staffing challenges with cutting-edge technology. Here is why Shiftly is the go-to platform for healthcare staffing in the UK:
         </p>
         <ul className="space-y-3">
           <li className="flex items-center space-x-2 text-gray-700">
@@ -88,10 +88,10 @@ export default function About() {
       </div>
 
       {/* Our Commitment Section */}
-      <div className="bg-gray-50 p-8 rounded-lg shadow">
+      <div className="bg-gray-50 p-8 rounded-lg shadow ">
         <h3 className="text-2xl font-semibold text-gray-800 mb-4">Our Commitment</h3>
         <p className="text-gray-600 mb-4">
-          At Shiftly, we’re dedicated to transforming healthcare staffing by:
+          At Shiftly, we are dedicated to transforming healthcare staffing by:
         </p>
         <ul className="space-y-2 text-gray-700">
           <li className="flex items-center space-x-2">

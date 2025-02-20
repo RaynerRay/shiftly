@@ -5,21 +5,22 @@ import Image from "next/image";
 
 const carouselItems = [
   {
-    image: "/images/1.jpg",
+    image: "/african-carer.jpg",
+    title: "Find Trusted Healthcare Workers,",
+    subtitle: "Easily & Securely",
+  },
+  {
+    image: "/female-carer.jpg",
+    title: "Hire Professional Caregivers,",
+    subtitle: "On Your Terms",
+  },
+  {
+    image: "/care-worker.jpg",
     title: "Join Our Network,",
-    subtitle: "Transform Healthcare",
-  },
-  {
-    image: "/images/2.jpg",
-    title: "Empower Healthcare Workers,",
-    subtitle: "Anytime",
-  },
-  {
-    image: "/images/3.jpg",
-    title: "Secure,",
-    subtitle: " ",
+    subtitle: "Connect with Clients Instantly",
   },
 ];
+
 
 export default function SignupCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -40,7 +41,7 @@ export default function SignupCarousel() {
   }, []);
 
   return (
-    <div className="relative w-full h-full bg-sky-700 rounded-l-lg overflow-hidden">
+    <div className="relative w-full h-full bg-gray-700 rounded-l-lg overflow-hidden">
       <div className="absolute inset-0">
         {carouselItems.map((item, index) => (
           <div
@@ -56,7 +57,7 @@ export default function SignupCarousel() {
               alt={`Slide ${index + 1}`}
               className="object-cover w-full h-full"
             />
-            <div className="absolute inset-0 bg-sky-700/50" />
+            <div className="absolute inset-0 bg-gray-700/50" />
           </div>
         ))}
       </div>

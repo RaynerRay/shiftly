@@ -142,11 +142,11 @@ const DoctorCard: React.FC<DoctorCardProps> = ({ isInPerson = false, doctor }) =
           />
           <div className="absolute bottom-4  right-2 z-20">
             <div className="flex items-center space-x-2">
-              <span className="px-2 py-1 text-xs font-semibold bg-green-500/90 text-white rounded-full flex items-center">
+              <span className="px-2 py-1 text-xs font-semibold bg-blue-500/90 text-white rounded-full flex items-center">
                 <BadgeCheck className="w-3 h-3 mr-1" />
                 Available today
               </span>
-              <span className="px-2 py-1 text-xs font-semibold bg-purple-500/90 text-white rounded-full">
+              <span className="px-2 py-1 text-xs font-semibold bg-orange-500/90 text-white rounded-full">
                 {doctor.doctorProfile?.gender}
               </span>
             </div>

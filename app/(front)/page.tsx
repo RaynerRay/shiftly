@@ -7,6 +7,9 @@ import BannerCarousel from "@/components/BannerCarousel";
 
 
 export default async function Home() {
+
+ 
+
   const bannerImages = [
     '/banner1.jpg',
     '/banner2.webp',
@@ -31,6 +34,7 @@ export default async function Home() {
       <Hero />
 
       <LogoClouds/>
+     
 
       {/* <OptionsHero /> */}
       {/* <div className="md:my-20 border-b border-gray-50"></div> */}

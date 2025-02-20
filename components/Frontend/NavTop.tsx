@@ -9,13 +9,13 @@ const NavTop = () => {
   // const [currencyDropdownOpen, setCurrencyDropdownOpen] = useState(false);
 
   return (
-    <nav className='bg-gray-50 '>
+    <nav className='bg-cyan-200 '>
       <div className="flex h-12 py-2 px-4 items-center justify-between max-w-7xl mx-auto">
         
         <div className=" items-center space-x-4 px-4 hidden lg:block ">
           <Link className="inline-flex items-center text-gray-500 hover:text-sky-500" href="mailto:info@markethub.co.zw">
             <Mail className="w-3 h-3" />
-            <span className="hidden lg:block ml-2 text-sm font-bold text-sky-500">info@shiftly.uk</span>
+            <span className="hidden lg:block ml-2 text-sm font-bold text-sky-500">info@shiftly.uk.uk</span>
           </Link>
           <div className="inline-flex items-center text-gray-500 hover:text-sky-500" >
             <Phone className="w-3 h-3" />

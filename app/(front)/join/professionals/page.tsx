@@ -94,17 +94,17 @@ const Page: FC = () => {
   };
 
   return (
-    <section className="relative py-20 md:py-24 overflow-hidden ">
+    <section className="relative py-20 md:py-24 overflow-hidden bg-gradient-to-r from-neutral-300 to-stone-400 text-gray-200">
       <div className="relative container px-4 mx-auto">
-        <div className="max-w-7xl mx-auto ">
-          <div className="flex justify-center ">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-center mb-2">
             <h1 className="font-heading text-2xl sm:text-4xl font-bold text-gray-900 mb-10">
               <span>Pick Up Extra Shifts, Keep Every</span>{" "}
               <span className="font-serif italic">Penny!</span>
             </h1>
           </div>
 
-          <div className="flex flex-wrap -mx-4 items-center">
+          <div className="flex flex-wrap -mx-4 items-center mb-10">
             <div className="w-full lg:w-1/2 px-4 mb-20 lg:mb-0">
               <div className="">
                 <div className="w-full sm:w-1/2 lg:w-full px-4 mb-10">
@@ -190,9 +190,9 @@ const Page: FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2">
                 {cards.map((card, i) => {
                   return (
-                    <div key={i} className="w-full xl:w-auto p-2 border border-sky-500 rounded-md mx-1">
+                    <div key={i} className="w-full xl:w-auto  border border-sky-200 rounded-md mx-1">
                       <div className="xl:max-w-sm h-full">
-                        <div className="px-9 py-8 h-full bg-sky-50 rounded-xl shadow-7xl ">
+                        <div className="px-9 py-8 h-full bg-sky-50 rounded-md shadow-7xl ">
                           <div className="flex flex-col justify-between h-full ">
                             <div>
                               <h3 className="mb-5 text-xl text-sky-900 font-bold leading-snug">

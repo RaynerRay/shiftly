@@ -17,15 +17,15 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <MapPin className="w-5 h-5 text-gray-400" />
-              <span>61 Prices Avenue, Mt Pleasant, Harare, Zimbabwe</span>
+              <span>61 Prices Avenue, Mt Pleasant, Sheffield, UK</span>
             </div>
             <div className="flex items-center space-x-3">
               <Phone className="w-5 h-5 text-gray-400" />
-              <span>+263 772 340 505</span>
+              <span>+44 772 340 505</span>
             </div>
             <div className="flex items-center space-x-3">
               <Mail className="w-5 h-5 text-gray-400" />
-              <span>info@markethub.co.zw</span>
+              <span>info@shiftly.uk</span>
             </div>
           </div>
           <div className="flex space-x-4">
@@ -52,9 +52,9 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-6">
             <Link href="/" className="text-blue-500 text-sm font-medium hover:text-blue-500 transition-colors">HOME</Link>
             <Link href="/about" className="text-gray-50 text-sm font-medium hover:text-blue-500 transition-colors">ABOUT</Link>
-            <Link href="/search" className="text-gray-50 text-sm font-medium hover:text-blue-500 transition-colors">ALL LISTINGS</Link>
-            <Link href="/companies" className="text-gray-50 text-sm font-medium hover:text-blue-500 transition-colors">COMPANIES</Link>
-            <Link href="/favourites" className="text-gray-50 text-sm font-medium hover:text-blue-500 transition-colors">FAVOURITES</Link>
+            <Link href="//howitworks" className="text-gray-50 text-sm font-medium hover:text-blue-500 transition-colors">HOW IT WORKS</Link>
+            <Link href="/join/professionals" className="text-gray-50 text-sm font-medium hover:text-blue-500 transition-colors">JOIN</Link>
+            <Link href="/articles" className="text-gray-50 text-sm font-medium hover:text-blue-500 transition-colors">ARTICLES</Link>
             <Link href="/contact" className="text-gray-50 text-sm font-medium hover:text-blue-500 transition-colors">CONTACT</Link>
            
           </div>
@@ -79,21 +79,17 @@ const Footer = () => {
         {/* Newsletter Section */}
         <div className="space-y-6">
           <h3 className="text-2xl text-white font-semibold">Join Shiftly</h3>
-          <p>List for jobs or workers</p>
+          <p>Connect With Clients</p>
           <div className="flex">
             {/* <input
               type="email"
               placeholder="Your email"
               className="flex-1 bg-white/10 px-4 py-2 rounded-l outline-none focus:ring-2 focus:ring-blue-500"
             /> */}
-            <button className="bg-blue-500 text-white px-6 py-2 rounded-r hover:bg-blue-500 transition-colors duration-300">
-              <Link 
-                  target="_blank"
-                  href="https://wa.me/0772340505?text=Hi,%20I%20want%20to%20list%20%20a%20property"
-                >Join 
+            <Link  href="/join/professionals" className="bg-blue-500 text-white px-6 py-2 rounded-r hover:bg-blue-500 transition-colors duration-300">
+              Join 
               </Link>
-              
-            </button>
+             
           </div>
         </div>
       </div>

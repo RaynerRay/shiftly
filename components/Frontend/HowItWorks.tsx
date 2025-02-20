@@ -36,7 +36,8 @@ const HowItWorks = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-16 bg-white">
+    <div className="bg-gradient-to-r from-neutral-300 to-stone-400 text-gray-200">
+    <div className="max-w-7xl mx-auto px-4 py-16 bg-gradient-to-r from-neutral-300 to-stone-400 text-gray-200">
       <div className="text-center mb-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">How It Works</h2>
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -63,6 +64,7 @@ const HowItWorks = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
