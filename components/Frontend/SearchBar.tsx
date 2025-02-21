@@ -63,7 +63,7 @@ export default function SearchBar() {
   }, [dropdownRef]);
 
   return (
-    <div className="max-w-7xl mx-auto bg-gradient-to-r from-sky-900 to-sky-800">
+    <div className="max-w-7xl mx-auto bg-gradient-to-r from-sky-600 to-sky-700">
     <div className="flex flex-col md:flex-row items-center justify-between z-10 relative bg-gray-500/40 p-8 rounded-lg mx-1">
   <div ref={dropdownRef} className="relative w-full md:w-5/12 mx-4 mb-4 md:mb-0 text-gray-900">
     <div

@@ -135,7 +135,7 @@ export default function AdditionalInfo({
             placeholder="Enter any Published Works or Research"
           /> */}
           <TextAreaInput
-            label="Special Accomplishments or Awards If You Have Aay"
+            label="Special Accomplishments or Awards If You Have Any"
             register={register}
             name="accomplishments"
             errors={errors}

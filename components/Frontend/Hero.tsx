@@ -24,14 +24,14 @@ const Hero = () => {
             <div className="flex flex-col justify-center">
               <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight md:mb-6 mb-2 md:block hidden">
                 <div className="flex flex-col md:flex-row items-center justify-center md:justify-start">
-                  <span className="text-[#0F3B5C] md:mr-2 ">Find</span>
+                  <span className="text-sky-600 md:mr-2 ">Find</span>
                   <TransitionalText
                     className="text-[#FF6847] mx-2"
                     TEXTS={TEXTS}
                   />
                 </div>
 
-                <span className="block text-[#0F3B5C] mt-2">across the UK</span>
+                <span className="block text-sky-600 mt-2">across the UK</span>
               </h1>
 
               <p className="text-xs text-slate-700  md:text-lg md:mb-8 mb-2">

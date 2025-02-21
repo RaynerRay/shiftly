@@ -8,8 +8,9 @@ import BannerCarousel from "@/components/BannerCarousel";
 
 export default async function Home() {
   const bannerImages = [
-    '/banner1.jpg',
     '/banner2.webp',
+    '/banner1.jpg',
+    
     '/banner3.jpg'
   ];
 
@@ -68,9 +69,9 @@ export default async function Home() {
           doctors={careWorkers}
           bgClassName="relative bg-sky-50 overflow-hidden"
         />
-        <div className="bg-white py-6">
+        {/* <div className="bg-white py-6">
           <BannerCarousel images={bannerImages} />
-        </div>
+        </div> */}
         <Banner
           title="Nurses"
           buttonLink="/search?profession=nurses"

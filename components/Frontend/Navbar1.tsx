@@ -31,7 +31,7 @@ const Navbar = ({ session }: { session: Session | null }) => {
   return (
     <div className="w-full">
       {/* Top bar */}
-      <div className="max-w-7xl mx-auto bg-gradient-to-r from-sky-900 to-sky-800">
+      <div className="max-w-7xl mx-auto bg-gradient-to-r from-sky-600 to-sky-700">
         <div className="hidden md:flex w-full py-2 px-4 justify-between items-center border-b">
           <div className="flex items-center">
             <Mail className="w-4 h-4 mr-2 text-white" />

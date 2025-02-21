@@ -30,7 +30,7 @@ const Banner: FC<BannerProps> = ({
   bgClassName,
 }) => {
   return (
-    <section className="py-2 bg-sky-500 overflow-x-hidden ">
+    <section className="border-y border-sky-500 overflow-x-hidden ">
       <div className="">
         <div className={bgClassName}>
           {/* {backgroundImage && (
@@ -44,7 +44,7 @@ const Banner: FC<BannerProps> = ({
             <div className="py-6 max-w-7xl mx-auto">
            
                 <div className="">
-                <span className="text-xl md:text-2xl text-gray-700">{title}</span>
+                <span className="text-lg md:text-xl text-gray-700">{title}</span>
                 {/* <a
                 className=" bg-gray-900 hover:bg-gray-800 text-white text-xs font-bold  py-2 px-2 rounded-md  transition duration-200"
                 href={buttonLink}
@@ -53,9 +53,9 @@ const Banner: FC<BannerProps> = ({
               </a> */}
                 </div>
               
-              <h2 className="mt-4 mb-4 text-2xl md:text-5xl font-bold font-heading text-gray-900">Featured {title}</h2>
+              <h2 className="mt-4 mb-4 text-xl md:text-3xl font-bold font-heading text-gray-900">Featured {title}</h2>
               <a
-                className="inline-block bg-sky-600 hover:bg-[#5caff9] text-white font-bold font-heading py-2 px-3 rounded-md uppercase transition duration-200"
+                className="inline-block bg-sky-600 hover:bg-[#5caff9] text-white font-normal font-heading py-2 px-3 rounded-md text-xs uppercase transition duration-200"
                 href={buttonLink}
               >
                 See All
