@@ -50,9 +50,10 @@ const InfiniteLogoSlider: React.FC<InfiniteLogoSliderProps> = ({
                 className="group flex min-w-[150px] items-center justify-center rounded-lg border border-gray-200 bg-white px-8 py-4 shadow-sm transition-all duration-200 hover:shadow-md"
               >
                 <Image
-                fill
                   src={logo.imageUrl || `/api/placeholder/150/50`}
                   alt={`${logo.name} logo`}
+                  width={100}
+                  height={100}
                   className="h-16 w-auto object-contain transition-transform duration-200 group-hover:scale-110"
                 />
               </div>
@@ -66,7 +67,8 @@ const InfiniteLogoSlider: React.FC<InfiniteLogoSliderProps> = ({
                 className="group flex min-w-[150px] items-center justify-center rounded-lg border border-gray-200 bg-white px-8 py-4 shadow-sm transition-all duration-200 hover:shadow-md"
               >
                 <Image
-                fill
+                width={100}
+                height={100}
                   src={logo.imageUrl || `/api/placeholder/150/50`}
                   alt={`${logo.name} logo`}
                   className="h-8 w-auto object-contain transition-transform duration-200 group-hover:scale-110"

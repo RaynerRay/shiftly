@@ -15,39 +15,41 @@ const Hero = () => {
                     <div className="md:w-1/2 text-center md:text-left">
                       
                         <div className="flex flex-col justify-center">
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6">
-                                <div className="flex items-center justify-center md:justify-start">
-                                    <span className="text-[#0F3B5C] mr-2">Find</span>
-                                    <TransitionalText 
-                                        className="text-[#FF6847]  mx-2" 
-                                        TEXTS={TEXTS} 
-                                    />
-                                </div>
+                            <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight md:mb-6 mb-2">
+                            <div className="flex flex-col md:flex-row items-center justify-center md:justify-start">
+  <span className="text-[#0F3B5C] md:mr-2 md:block hidden">Find</span>
+  <TransitionalText 
+    className="text-[#FF6847] mx-2" 
+    TEXTS={TEXTS} 
+  />
+</div>
+
                                 <span className="block text-[#0F3B5C] mt-2">across the UK</span>
                             </h1>
                             
-                            <p className="text-slate-700 text-base md:text-lg mb-8">
-                                Your health, simplified. Find and book appointments with top healthcare workers across the UK.
-                            </p>
+                            <p className="text-xs text-slate-700  md:text-lg md:mb-8 mb-2">
+  Find and book appointments with top healthcare workers across the UK.
+</p>
+
                             
                             {/* Feature Icons */}
                            {/* Feature Icons */}
-                        <div className="flex justify-center md:justify-start space-x-8 mb-12">
+                        <div className="flex justify-center md:justify-start space-x-8 mb-2">
                             <div className="flex flex-col items-center">
                             <div className="bg-[#FFE4E0] p-3 rounded-full mb-2">
-                                    <HeartPulse className="text-[#FF6847] w-8 h-8" />
+                                    <HeartPulse className="text-[#FF6847] md:w-8 md:h-8 w-4 h-4" />
                                 </div>
                                 <span className="text-sm text-[#0F3B5C] font-medium">Caring</span>
                             </div>
                             <div className="flex flex-col items-center">
                             <div className="bg-[#FFE4E0] p-3 rounded-full mb-2">
-                                    <Users className="text-[#FF6847] w-8 h-8" />
+                                    <Users className="text-[#FF6847] md:w-8 md:h-8 w-4 h-4" />
                                </div>
                                 <span className="text-sm text-[#0F3B5C] font-medium">Professional</span>
                             </div>
                             <div className="flex flex-col items-center">
                                 <div className="bg-[#FFE4E0] p-3 rounded-full mb-2">
-                                    <Stethoscope className="text-[#FF6847] w-8 h-8" />
+                                    <Stethoscope className="text-[#FF6847] md:w-8 md:h-8 w-4 h-4" />
                                 </div>
                                 <span className="text-sm text-[#0F3B5C] font-medium">Trusted</span>
                             </div>

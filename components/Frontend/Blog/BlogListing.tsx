@@ -94,7 +94,8 @@ const BlogListingPage = () => {
                   src={post.image}
                   alt={post.title}
                   className="w-full h-48 object-cover"
-                  fill
+                  width={100}
+                  height={100}
                 />
                 <span className="absolute top-4 left-4 px-3 py-1 bg-blue-500 text-white text-sm rounded-md">
                   {post.type}
@@ -119,7 +120,8 @@ const BlogListingPage = () => {
                 
                 <div className="flex items-center gap-3">
                   <Image
-                  fill
+                  width={100}
+                  height={100}
                     src={post.author.avatar}
                     alt={post.author.name}
                     className="w-8 h-8 rounded-full"
