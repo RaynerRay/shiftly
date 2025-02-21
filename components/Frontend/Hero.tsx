@@ -8,7 +8,7 @@ const Hero = () => {
     const TEXTS = ["Nurses", "Carers", "Social Workers"];
 
     return (
-        <div className="bg-gradient-to-br from-[#FFE4E0] to-white text-gray-200 h-screen">
+        <div className="bg-gradient-to-br from-orange-50 to-white text-gray-200 h-screen">
             <div className="max-w-7xl mx-auto px-4 py-2 md:py-20">
                 <div className="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
                     {/* Text Content */}
@@ -57,7 +57,7 @@ const Hero = () => {
                     </div>
                     
                     {/* Image Content */}
-                    <div className="md:w-1/2 relative">
+                    {/* <div className="md:w-1/2 relative">
                         <div className="rounded-lg overflow-hidden shadow-2xl transform transition-transform hover:scale-105">
                             <Image
                                 className="w-full h-96 "
@@ -68,7 +68,22 @@ const Hero = () => {
                             />
                             
                         </div>
-                    </div>
+                    </div> */}
+                    <div className="md:w-1/2 relative">
+    <div className="rounded-lg overflow-hidden shadow-2xl transform transition-transform hover:scale-105">
+        <div className="relative aspect-w-1 aspect-h-1">
+            <Image
+                className="w-full h-full object-cover"
+                height={500}
+                width={500}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                src="/hero.jpg"
+                alt="Healthcare professionals"
+                priority
+            />
+        </div>
+    </div>
+</div>
                 </div>
                 
                 {/* Search Bar */}

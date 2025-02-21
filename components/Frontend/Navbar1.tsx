@@ -31,17 +31,17 @@ const Navbar = ({ session }: { session: Session | null }) => {
   return (
     <div className="w-full">
       {/* Top bar */}
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto bg-gradient-to-r from-sky-900 to-sky-800">
         <div className="hidden md:flex w-full py-2 px-4 justify-between items-center border-b">
           <div className="flex items-center">
-            <Mail className="w-4 h-4 mr-2" />
-            <span className="text-gray-600 text-sm">info@shiftly.uk</span>
+            <Mail className="w-4 h-4 mr-2 text-white" />
+            <span className="text-gray-50 text-sm">info@shiftly.uk</span>
           </div>
           <div className="flex gap-4">
-            <Facebook className="w-4 h-4 text-gray-600 hover:text-blue-500 cursor-pointer" />
-            <Twitter className="w-4 h-4 text-gray-600 hover:text-blue-500 cursor-pointer" />
-            <Instagram className="w-4 h-4 text-gray-600 hover:text-blue-500 cursor-pointer" />
-            <Linkedin className="w-4 h-4 text-gray-600 hover:text-blue-500 cursor-pointer" />
+            <Facebook className="w-4 h-4 text-gray-50 hover:text-blue-500 cursor-pointer" />
+            <Twitter className="w-4 h-4 text-gray-50 hover:text-blue-500 cursor-pointer" />
+            <Instagram className="w-4 h-4 text-gray-50 hover:text-blue-500 cursor-pointer" />
+            <Linkedin className="w-4 h-4 text-gray-50 hover:text-blue-500 cursor-pointer" />
           </div>
         </div>
       </div>
@@ -107,7 +107,7 @@ const Navbar = ({ session }: { session: Session | null }) => {
                   </DropdownMenuContent>
                 </DropdownMenu>
               ) : (
-                <Link href="/login" className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 flex items-center">
+                <Link href="/login" className="bg-gray-500 text-white px-4 py-2 rounded-full hover:bg-gray-600 flex items-center">
                   <PersonIcon className="mr-2 h-4 w-4" /> Login
                 </Link>
               )}
