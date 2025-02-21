@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 interface Logo {
@@ -48,7 +49,8 @@ const InfiniteLogoSlider: React.FC<InfiniteLogoSliderProps> = ({
                 key={logo.id}
                 className="group flex min-w-[150px] items-center justify-center rounded-lg border border-gray-200 bg-white px-8 py-4 shadow-sm transition-all duration-200 hover:shadow-md"
               >
-                <img
+                <Image
+                fill
                   src={logo.imageUrl || `/api/placeholder/150/50`}
                   alt={`${logo.name} logo`}
                   className="h-16 w-auto object-contain transition-transform duration-200 group-hover:scale-110"
@@ -63,7 +65,8 @@ const InfiniteLogoSlider: React.FC<InfiniteLogoSliderProps> = ({
                 key={`duplicate-${logo.id}`}
                 className="group flex min-w-[150px] items-center justify-center rounded-lg border border-gray-200 bg-white px-8 py-4 shadow-sm transition-all duration-200 hover:shadow-md"
               >
-                <img
+                <Image
+                fill
                   src={logo.imageUrl || `/api/placeholder/150/50`}
                   alt={`${logo.name} logo`}
                   className="h-8 w-auto object-contain transition-transform duration-200 group-hover:scale-110"

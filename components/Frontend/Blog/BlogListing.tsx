@@ -1,5 +1,6 @@
 import React from 'react';
 import { Search, Filter, RefreshCw } from 'lucide-react';
+import Image from 'next/image';
 
 interface BlogPost {
   id: number;
@@ -89,10 +90,11 @@ const BlogListingPage = () => {
           {posts.map((post) => (
             <div key={post.id} className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <div className="relative">
-                <img
+                <Image
                   src={post.image}
                   alt={post.title}
                   className="w-full h-48 object-cover"
+                  fill
                 />
                 <span className="absolute top-4 left-4 px-3 py-1 bg-blue-500 text-white text-sm rounded-md">
                   {post.type}
@@ -116,7 +118,8 @@ const BlogListingPage = () => {
                 </h2>
                 
                 <div className="flex items-center gap-3">
-                  <img
+                  <Image
+                  fill
                     src={post.author.avatar}
                     alt={post.author.name}
                     className="w-8 h-8 rounded-full"
