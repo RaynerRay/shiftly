@@ -39,7 +39,6 @@ export default function ContactInfo({
       phone: doctorProfile.phone || savedDBData.phone,
       address: doctorProfile.city || savedDBData.city,
       city: doctorProfile.city || savedDBData.city,
-      // address: doctorProfile.address || savedDBData.address,
       page: doctorProfile.page || savedDBData.page,
     },
   });

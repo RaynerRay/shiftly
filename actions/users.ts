@@ -13,6 +13,8 @@ export async function createUser(formData: RegisterInputProps) {
   const resend = new Resend(process.env.RESEND_API_KEY);
   const { fullName, email, role, phone, password, plan } = formData;
   try {
+    // Add these console.logs in your createUser function
+
     if (isEmailBlacklisted(email)) {
       return {
         error: `Please use a valid, non-temporary email address.`,
@@ -62,43 +64,46 @@ export async function createUser(formData: RegisterInputProps) {
       email: newUser.email,
     };
     const profile = await createDoctorProfile(profileData);
-    const times = [
-      "7:00 AM",
-      "8:00 AM",
-      "9:00 AM",
-      "10:00 AM",
-      "11:00 AM",
-      "12:00 PM",
-      "1:00 PM",
-      "2:00 PM",
-      "3:00 PM",
-      "4:00 PM",
-      "5:00 PM",
-      "6:00 PM",
-    ];
-    const availabilityData = {
-      monday: times,
-      tuesday: times,
-      wednesday: times,
-      thursday: times,
-      friday: times,
-      saturday: times,
-      doctorProfileId: profile.data?.id,
-    };
-    await createAvailability(availabilityData);
+    // const times = [
+    //   "7:00 AM",
+    //   "8:00 AM",
+    //   "9:00 AM",
+    //   "10:00 AM",
+    //   "11:00 AM",
+    //   "12:00 PM",
+    //   "1:00 PM",
+    //   "2:00 PM",
+    //   "3:00 PM",
+    //   "4:00 PM",
+    //   "5:00 PM",
+    //   "6:00 PM",
+    // ];
+    // const availabilityData = {
+    //   monday: times,
+    //   tuesday: times,
+    //   wednesday: times,
+    //   thursday: times,
+    //   friday: times,
+    //   saturday: times,
+    //   doctorProfileId: profile.data?.id,
+    // };
+    // await createAvailability(availabilityData);
     //Send an Email with the Token on the link as a search param
     const token = newUser.token;
     const userId = newUser.id;
     const firstName = newUser.name.split(" ")[0];
     const linkText = "Verify your Account ";
     const message =
-      "Thank you for registering with Online Doctors. To complete your registration and verify your email address, please enter the following 6-digit verification code on our website :";
-    const sendMail = await resend.emails.send({
-      from: "Medical App <noreply@shiftly.uk>",
+      "Thank you for registering with Shiftly UK. To complete your registration and verify your email address, please enter the following 6-digit verification code on our website :";
+    
+      const sendMail = await resend.emails.send({
+      from: "Shiftly <info@shiftly.uk>",
       to: email,
       subject: "Verify Your Email Address",
       react: EmailTemplate({ firstName, token, linkText, message }),
     });
+   
+    
     console.log(token);
     console.log(sendMail);
     // console.log(newUser);

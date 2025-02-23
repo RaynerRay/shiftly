@@ -196,6 +196,7 @@ model DoctorProfile {
   // country                  String?
   city                     String?
   state                    String?
+  address                    String?
   profession                String?
   // medicalSchool            String?
   // graduationYear           String?

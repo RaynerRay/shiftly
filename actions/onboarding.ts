@@ -3,6 +3,7 @@
 import WelcomeEmail from "@/components/Emails/welcome-email";
 import { prismaClient } from "@/lib/db";
 import { Resend } from "resend";
+
 export async function createDoctorProfile(formData: any) {
   const {
     dob,
@@ -16,7 +17,42 @@ export async function createDoctorProfile(formData: any) {
     phone,
     email,
   } = formData;
+
   try {
+    // First check if a profile already exists for this user
+    const existingProfile = await prismaClient.doctorProfile.findUnique({
+      where: {
+        userId,
+      },
+    });
+
+    if (existingProfile) {
+      // If profile exists, update it instead of creating a new one
+      const updatedProfile = await prismaClient.doctorProfile.update({
+        where: {
+          userId,
+        },
+        data: {
+          dob,
+          firstName,
+          gender,
+          lastName,
+          middleName,
+          page,
+          trackingNumber,
+          phone,
+          email,
+        },
+      });
+
+      return {
+        data: updatedProfile,
+        status: 201,
+        error: null,
+      };
+    }
+
+    // If no profile exists, create a new one
     const newProfile = await prismaClient.doctorProfile.create({
       data: {
         dob,
@@ -31,7 +67,7 @@ export async function createDoctorProfile(formData: any) {
         email,
       },
     });
-    // console.log(newProfile);
+
     return {
       data: newProfile,
       status: 201,
