@@ -4,44 +4,31 @@ import Image from 'next/image';
 
 interface BlogPost {
   id: number;
-  type: 'BLOG' | 'ARTICLE' | 'COMPANY_NEWS' | 'CASE_STUDY';
   title: string;
   image: string;
   categories: string[];
-  author: {
-    name: string;
-    avatar: string;
-    lastUpdated: string;
-  };
+  lastUpdated: string;
+ 
 }
 
 const BlogListingPage = () => {
   const posts: BlogPost[] = [
     {
       id: 1,
-      type: 'BLOG',
       title: 'Understanding Modern Web Development',
-      image: '/api/placeholder/400/250',
+      image: '/female-carer.jpg',
       categories: ['Technology', 'Education'],
-      author: {
-        name: 'Jane Smith',
-        avatar: '/api/placeholder/40/40',
-        lastUpdated: '01/11/2024'
-      }
+      lastUpdated: '01/11/2024'
     },
     {
       id: 2,
-      type: 'CASE_STUDY',
       title: 'Implementing Design Systems at Scale',
-      image: '/api/placeholder/400/250',
+      image: '/female-carer.jpg',
       categories: ['Design', 'Development'],
-      author: {
-        name: 'John Doe',
-        avatar: '/api/placeholder/40/40',
-        lastUpdated: '01/11/2024'
-      }
+      lastUpdated: '01/11/2024'
+     
     },
-    // Add more sample posts as needed
+
   ];
 
   return (
@@ -97,9 +84,7 @@ const BlogListingPage = () => {
                   width={100}
                   height={100}
                 />
-                <span className="absolute top-4 left-4 px-3 py-1 bg-blue-500 text-white text-sm rounded-md">
-                  {post.type}
-                </span>
+                
               </div>
               
               <div className="p-4">
@@ -119,19 +104,10 @@ const BlogListingPage = () => {
                 </h2>
                 
                 <div className="flex items-center gap-3">
-                  <Image
-                  width={100}
-                  height={100}
-                    src={post.author.avatar}
-                    alt={post.author.name}
-                    className="w-8 h-8 rounded-full"
-                  />
-                  <div>
-                    <p className="text-sm text-gray-600">By {post.author.name}</p>
-                    <p className="text-xs text-gray-400">
-                      Last updated: {post.author.lastUpdated}
+                <p className="text-xs text-gray-400">
+                      Last updated: {post.lastUpdated}
                     </p>
-                  </div>
+               
                 </div>
               </div>
             </div>

@@ -43,24 +43,24 @@ const Hero = () => {
               {/* Feature Icons */}
               <div className="flex justify-center md:justify-start space-x-8 mb-2">
                 <div className="flex flex-col items-center">
-                  <div className="bg-[#FFE4E0] p-3 rounded-full mb-2">
-                    <HeartPulse className="text-[#FF6847] md:w-8 md:h-8 w-4 h-4" />
+                  <div className="bg-sky-100 p-3 rounded-full mb-2">
+                    <HeartPulse className="text-sky-500 md:w-8 md:h-8 w-4 h-4" />
                   </div>
                   <span className="text-sm text-[#0F3B5C] font-medium">
                     Caring
                   </span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <div className="bg-[#FFE4E0] p-3 rounded-full mb-2">
-                    <Users className="text-[#FF6847] md:w-8 md:h-8 w-4 h-4" />
+                  <div className="bg-sky-100 p-3 rounded-full mb-2">
+                    <Users className="text-sky-500 md:w-8 md:h-8 w-4 h-4" />
                   </div>
                   <span className="text-sm text-[#0F3B5C] font-medium">
                     Professional
                   </span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <div className="bg-[#FFE4E0] p-3 rounded-full mb-2">
-                    <Stethoscope className="text-[#FF6847] md:w-8 md:h-8 w-4 h-4" />
+                  <div className="bg-sky-100 p-3 rounded-full mb-2">
+                    <Stethoscope className="text-sky-500 md:w-8 md:h-8 w-4 h-4" />
                   </div>
                   <span className="text-sm text-[#0F3B5C] font-medium">
                     Trusted

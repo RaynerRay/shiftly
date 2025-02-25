@@ -64,7 +64,7 @@ export default function SearchBar() {
 
   return (
     <div className="max-w-7xl mx-auto">
-    <div className="flex flex-col md:flex-row items-center justify-between  z-10 relative bg-gray-500/40 p-8 rounded-lg mx-1">
+    <div className="flex flex-col md:flex-row items-center justify-between  z-10 relative bg-gradient-to-r from-sky-600 to-sky-700 p-8 rounded-lg mx-1">
       <div ref={dropdownRef} className="relative w-full md:w-5/12 mx-4 text-gray-900">
         <div
           className="flex items-center bg-gray-100 border border-slate-300 gap-4 rounded py-2 px-3 cursor-pointer text-gray-900"
@@ -116,7 +116,7 @@ export default function SearchBar() {
   </select>
 
       <button
-        className="bg-gray-100 text-gray-800 w-full md:w-2/12 rounded flex items-center px-2 justify-center py-4 hover:bg-blue-500 hover:text-white transition"
+        className="bg-sky-500/40 text-gray-50 w-full md:w-2/12 rounded flex items-center px-2 justify-center py-4 hover:bg-sky-500 hover:text-white transition"
         onClick={handleSearch} // Call handleSearch on click
       >
         <Search className="mr-2" />

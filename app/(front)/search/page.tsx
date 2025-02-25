@@ -26,6 +26,7 @@ interface Doctor {
   [key: string]: any; // Add this to accommodate additional fields from doctorProfile
 }
 
+
 export default async function Page({
   searchParams,
 }: {
@@ -46,12 +47,12 @@ export default async function Page({
       firstName: doc.firstName,
       lastName: doc.lastName,
       // Add other relevant fields from doc
-      gender: null,
-      profession: null,
-      bio: null,
-      profilePicture: null,
-      hourlyWage: 0,
-      availability: null
+      gender: doc.doctorProfile.gender || null,
+      profession:doc.doctorProfile.profession  || null,
+      bio: doc.doctorProfile.bio || null,
+      profilePicture: doc.doctorProfile.profilePicture || null,
+      hourlyWage: doc.doctorProfile.hourlyWage,
+      availability: doc.doctorProfile.availability || null
     }
   })) || [];
   const formattedProfession = profession
@@ -61,6 +62,7 @@ export default async function Page({
     ? separateAndCapitalise(city)
     : "";
 
+    
   return (
     <div className="max-w-7xl mx-auto py-2 h-screen">
       {/* Search  */}

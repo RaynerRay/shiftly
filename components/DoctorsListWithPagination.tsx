@@ -4,7 +4,7 @@ import { useState } from "react";
 import DoctorCard from "@/components/DoctorCard";
 import  { Doctor as ImportedDoctor } from "@/types/types"; 
 
-const ITEMS_PER_PAGE = 2;
+const ITEMS_PER_PAGE = 10;
 
 const DoctorsListWithPagination: React.FC<{ doctors: ImportedDoctor[] }> = ({
   doctors,
@@ -34,7 +34,7 @@ const DoctorsListWithPagination: React.FC<{ doctors: ImportedDoctor[] }> = ({
 
   return (
     <>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-3 gap-6 mb-12">
         {paginatedDoctors.map((doctor) => (
           <DoctorCard key={doctor.id} doctor={doctor} />
         ))}

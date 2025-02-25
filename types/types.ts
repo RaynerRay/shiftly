@@ -175,3 +175,13 @@ export interface AppointmentProps {
   meetingLink: string;
   meetingProvider: string;
 }
+
+export interface BlogPost {
+  id: string;
+  title: string;
+  image: string;
+  slug: string;
+  categories: string[];
+  lastUpdated: string;
+}
+

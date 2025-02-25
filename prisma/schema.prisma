@@ -47,6 +47,21 @@ enum UserRole {
 }
 
 
+model BlogPost {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  title       String
+  slug        String   @unique
+  content     String?
+  image       String
+  categories  String[]
+  lastUpdated String
+  publishedAt DateTime?
+  isPublished Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+ 
+}
 
 
 
