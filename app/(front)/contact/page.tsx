@@ -33,15 +33,15 @@ const page = () => {
                 </p>
                 <div className="contact-right">
                   <div className="single-contact flex items-center mb-4">
-                    <MapPin className="text-gray-50 mr-4  bg-blue-500 p-1" />
+                    <MapPin className="text-gray-50 mr-4  bg-sky-500 p-1" />
                     <p>61 Prices Avenue, sheffield, UK</p>
                   </div>
                   <div className="single-contact flex items-center mb-4">
-                    <Mail className="text-gray-50 mr-4  bg-blue-500 p-1" />
+                    <Mail className="text-gray-50 mr-4  bg-sky-500 p-1" />
                     <p><a href="mailto:Feedback@property.com">info@shitly.uk</a></p>
                   </div>
                   <div className="single-contact flex items-center mb-4">
-                    <Phone className="text-gray-50 mr-4  bg-blue-500 p-1" />
+                    <Phone className="text-gray-50 mr-4  bg-sky-500 p-1" />
                     <p><a href="tel:+1234567478">+44-774-340-505</a></p>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ const page = () => {
                   ></textarea>
                 </div>
                 <div className="form-submit">
-                  <button type="submit" className="btn bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg py-2 px-4 flex items-center">
+                  <button type="submit" className="btn bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded-lg py-2 px-4 flex items-center">
                     <i className="fa fa-paper-plane mr-2" aria-hidden="true"></i> Send Message
                   </button>
                   <div id="msgSubmit" className="h3 text-center hidden"></div>

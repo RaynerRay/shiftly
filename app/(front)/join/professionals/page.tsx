@@ -70,14 +70,14 @@ const faqs = {
 
 const cards = [
   {
-    title: " Begin Your Journey",
+    title: " Join Our Network",
     description:
       "Start a new application to join our network of healthcare providers.",
     link: "/register?role=DOCTOR&plan=free",
     linkTitle: "Start a new application",
   },
   {
-    title: "Resume your Application",
+    title: "Resume Your Application",
     description:
       "Pick up where you left off and complete your onboarding process.",
     link: "/onboarding/resume",
@@ -94,7 +94,7 @@ const Page: FC = () => {
   };
 
   return (
-    <section className="relative py-20 md:py-24 overflow-hidden bg-gradient-to-r from-neutral-300 to-stone-400 text-gray-200">
+    <section className="relative py-20 md:py-8 overflow-hidden bg-gradient-to-r from-neutral-300 to-sky-200 text-gray-200">
       <div className="relative container px-4 mx-auto">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-center mb-2">

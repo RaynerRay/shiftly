@@ -37,12 +37,12 @@ const Navbar = ({ session }: { session: Session | null }) => {
             <Mail className="w-4 h-4 mr-2 text-white" />
             <span className="text-gray-50 text-sm">info@shiftly.uk</span>
           </div>
-          <div className="flex gap-4">
+          {/* <div className="flex gap-4">
             <Facebook className="w-4 h-4 text-gray-50 hover:text-blue-500 cursor-pointer" />
             <Twitter className="w-4 h-4 text-gray-50 hover:text-blue-500 cursor-pointer" />
             <Instagram className="w-4 h-4 text-gray-50 hover:text-blue-500 cursor-pointer" />
             <Linkedin className="w-4 h-4 text-gray-50 hover:text-blue-500 cursor-pointer" />
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -53,7 +53,7 @@ const Navbar = ({ session }: { session: Session | null }) => {
             {/* Logo */}
             <div className="flex items-center">
               <Link href="/" className="flex items-center">
-                <div className="text-[#FF6847] text-3xl mr-2"><Cross /></div>
+                <div className="text-sky-500 text-3xl mr-2"><Cross /></div>
                 <span className="text-xl font-bold">SHIFTLY</span>
               </Link>
             </div>
@@ -73,7 +73,7 @@ const Navbar = ({ session }: { session: Session | null }) => {
               <div className="flex items-center">
                 <Phone className="w-4 h-4 text-blue-500 mr-2" />
                 <div>
-                  <div className="text-xs text-gray-500">Hotline:</div>
+                  <div className="text-xs text-gray-500">Phone:</div>
                   <div className="text-sm font-medium">+(44) 864 434 57</div>
                 </div>
               </div>

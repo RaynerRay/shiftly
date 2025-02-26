@@ -16,7 +16,7 @@ const Hero = () => {
   const TEXTS = ["Nurses", "Carers", "Social Workers"];
 
   return (
-    <div className="bg-gradient-to-br from-orange-50 to-white text-gray-200 h-screen">
+    <div className="bg-gradient-to-br from-orange-50 to-white text-gray-200 md:h-screen">
       <div className="max-w-7xl mx-auto px-4 py-2 md:py-20">
         <div className="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
           {/* Text Content */}
@@ -34,15 +34,15 @@ const Hero = () => {
                 <span className="md:block hidden  text-sky-600 mt-2">across the UK</span>
               </h1>
 
-              <p className="text-xs text-slate-700  md:text-lg md:mb-8 mb-2">
+              <p className="text-xs text-sky-800  md:text-lg md:mb-8 mb-2 ">
                 Find and book appointments with top healthcare workers across
                 the UK.
               </p>
 
               {/* Feature Icons */}
               {/* Feature Icons */}
-              <div className="flex justify-center md:justify-start space-x-8 mb-2">
-                <div className="flex flex-col items-center">
+              <div className="hidden md:flex justify-center md:justify-start space-x-8 mb-2 ">
+                <div className="flex flex-col items-center ">
                   <div className="bg-sky-100 p-3 rounded-full mb-2">
                     <HeartPulse className="text-sky-500 md:w-8 md:h-8 w-4 h-4" />
                   </div>

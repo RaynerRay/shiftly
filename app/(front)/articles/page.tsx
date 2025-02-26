@@ -97,7 +97,7 @@ export default function BlogsPage() {
   };
 
   return (
-    <div className="container mx-auto py-10">
+    <div className="max-w-7xl mx-auto py-10">
       <h1 className="text-3xl font-bold text-gray-800 mb-8">All Articles</h1>
       
       <div className="flex flex-wrap gap-4 mb-8">
@@ -112,7 +112,8 @@ export default function BlogsPage() {
             />
             <button 
               type="submit"
-              className="absolute right-3 top-3 text-gray-400">
+              className="absolute right-2 rounded-md text-gray-50 bg-sky-500 py-3 px-5 top-1 flex gap-2">
+              
               <Search size={20} />
             </button>
           </div>

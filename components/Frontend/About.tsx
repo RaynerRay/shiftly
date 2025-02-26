@@ -2,6 +2,7 @@
 
 import { Check } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -46,9 +47,11 @@ export default function About() {
           </ul>
 
           {/* Button */}
-          <button className="mt-4 px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition">
-            Learn More
+          <Link href="/join/professionals">
+          <button className="mt-4 px-6 py-3 bg-sky-500 text-white font-semibold rounded-lg hover:bg-sky-600 transition">
+            Join Our Network
           </button>
+          </Link>
         </div>
       </div>
 

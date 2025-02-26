@@ -63,7 +63,7 @@ export default async function Home() {
 
         <Banner
           title="Care Workers"
-          buttonLink="/search?profession=care-worker"
+          buttonLink="/search?profession=careWorker"
           backgroundImage="/yofte-assets/elements/cta-lines2.svg"
           imageAlt="Product image"
           doctors={careWorkers}
@@ -74,7 +74,7 @@ export default async function Home() {
         </div> */}
         <Banner
           title="Nurses"
-          buttonLink="/search?profession=nurses"
+          buttonLink="/search?profession=nurse"
           backgroundImage="/yofte-assets/elements/cta-lines2.svg"
           imageAlt="Product image"
           doctors={nurses}
@@ -82,7 +82,7 @@ export default async function Home() {
         />
         <Banner
           title="Adult Social Workers"
-          buttonLink="/search?profession=social-worker"
+          buttonLink="/search?profession=adultSocialWorker"
           backgroundImage="/yofte-assets/elements/cta-lines2.svg"
           imageAlt="Product image"
           doctors={adultSocialWorkers}
@@ -90,7 +90,7 @@ export default async function Home() {
         />
         <Banner
           title="Children Social Workers"
-          buttonLink="/search?profession=social-worker"
+          buttonLink="/search?profession=childrenSocialWorker"
           backgroundImage="/yofte-assets/elements/cta-lines2.svg"
           imageAlt="Product image"
           bgClassName="bg-sky-50 mx-auto"

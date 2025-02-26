@@ -128,7 +128,7 @@ const DoctorCard: React.FC<DoctorCardProps> = ({ isInPerson = false, doctor }) =
   if (!times || times.length === 0) return null;
 
   return (
-    <div className="w-80 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-400/40 :border-slate-700">
+    <div className=" bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-400/40 :border-slate-700">
       <Link href={`/doctors/${doctor.slug}?id=${doctor.id}`} className="block">
         {/* Header Section with Image */}
         <div className="relative">

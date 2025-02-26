@@ -116,7 +116,7 @@ export default function SearchBar() {
   </select>
 
   <button
-    className="bg-sky-500/40 text-white w-full md:w-2/12 rounded flex items-center px-2 justify-center py-4 hover:bg-orange-600 hover:text-white transition"
+    className="bg-sky-500/40 text-white w-full md:w-2/12 rounded flex items-center px-2 justify-center py-4 hover:bg-sky-500 hover:text-white transition"
     onClick={handleSearch}
   >
     <Search className="mr-2" />

@@ -9,3 +9,5 @@ DBS Scotland equivalent
 limit docror cardsto 6 on home page
 
 handle double select on date error
+
+## Search page responsive 
