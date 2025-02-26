@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "Online Docs ",
+  name: "Shiftly UK ",
   url: "https://ui.shadcn.com",
-  ogImage: "https://ui.shadcn.com/og.jpg",
+  ogImage: "/icon.png",
   description:
-    "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
+    "Shiftly revolutionises healthcare staffing in the UK, offering instant connections between healthcare providers and qualified professionals. Our platform ensures you find the right shifts or staff seamlessly, anytime.",
   links: {
     twitter: "https://twitter.com/shadcn",
     github: "https://github.com/shadcn-ui/ui",

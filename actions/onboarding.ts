@@ -204,13 +204,13 @@ export async function completeProfile(id: string | undefined, data: any) {
       //send a welcome email
       const firstName = existingProfile.firstName;
       const email = existingProfile.email as string;
-      const previewText = "Welcome to Online Doctors ";
+      const previewText = "Welcome to Shiftly UK ";
       const message =
-        "Thank you for joining Online Doctors, we are so grateful that we have onboard ";
+        "Thank you for joining Shiftly UK, we are so grateful that we have onboard ";
       const sendMail = await resend.emails.send({
         from: "Medical App <noreply@shiftly.uk>",
         to: email,
-        subject: "Welcome to Online Doctors",
+        subject: "Welcome to Shiftly UK",
         react: WelcomeEmail({ firstName, previewText, message }),
       });
       const updatedProfile = await prismaClient.doctorProfile.update({
